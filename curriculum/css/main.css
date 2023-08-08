@@ -1,0 +1,36 @@
+:root {
+    --theme-color:white;
+    --primary-color:rgb(0, 162, 255);
+    --secondary-color:grey;
+    --text-color-inverse:white;
+    --text-color:black;
+    --menu-mobile-background-color:grey;
+}
+body{
+    font-family: 'Vina Sans', cursive;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.banner video{
+    position: absolute;
+    right:0;
+    bottom:0;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    .banner video{
+        width:100%;
+        height:auto;
+    }
+}
+
+@media(max-width:950px){
+    .banner video{
+        opacity: 0;
+    }
+}
